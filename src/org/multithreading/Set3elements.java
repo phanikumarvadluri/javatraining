@@ -1,4 +1,4 @@
-package com.org;
+package com.org.multithreading;
 
 public class Set3elements implements Runnable{
     @Override

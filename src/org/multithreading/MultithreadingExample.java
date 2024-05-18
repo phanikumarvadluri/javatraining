@@ -1,10 +1,5 @@
 package com.org.multithreading;
 
-import com.org.Set1OfElemtns;
-import com.org.Set2ofElements;
-import com.org.Set3elements;
-import com.org.Set4;
-
 public class MultithreadingExample {
 
     public static void main(String[] args) {
@@ -21,6 +16,7 @@ public class MultithreadingExample {
 
 //        set1OfElemtns.m1();
 //        set2ofElements.m2();
+
 //        set3elements.m3();
 //        set4.m4();
 

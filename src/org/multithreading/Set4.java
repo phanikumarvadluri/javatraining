@@ -1,4 +1,4 @@
-package com.org;
+package com.org.multithreading;
 
 public class Set4 implements  Runnable{
 
