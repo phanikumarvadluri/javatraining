@@ -1,0 +1,15 @@
+1) Install visual studio Redistributable Version
+
+	https://aka.ms/vs/17/release/vc_redist.x64.exe
+
+2) Install Mysql database.
+
+https://dev.mysql.com/downloads/mysql/
+
+Windows (x86, 64-bit), MSI Installer
+
+3) download workbench:
+
+
+
+Windows (x86, 64-bit), MSI Installer
