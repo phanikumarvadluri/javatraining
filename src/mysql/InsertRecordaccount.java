@@ -9,26 +9,29 @@ import java.sql.Statement;
 import java.util.Date;
 
 public class InsertRecordaccount {
-    public static void main(String[] args) throws ClassNotFoundException, SQLException {
+    public static void main(String[] args) {
 
 //step1": need get required details like url of db,name db and name of schema,username,password
         String url = "jdbc:mysql://localhost/phani";
         String uname = "root";
         String pass = "Kalhonaho02&";
 
-        Class.forName("com.mysql.cj.jdbc.Driver");
-
-        Connection con
-                = DriverManager.getConnection(url, uname, pass);
-
-        Statement statement = con.createStatement();
-
-        StringBuilder query = getStringBuilder();
-        statement.execute(query.toString());
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Connection con
+                    = DriverManager.getConnection(url, uname, pass);
+            Statement statement = con.createStatement();
+            StringBuilder query = getStringBuilder();
+            statement.execute(query.toString());
+        } catch (ClassNotFoundException ex) {
+            System.out.println("looks like jar file is not added to path");
+        } catch (SQLException ex) {
+            System.out.println("looks like there issue connecting db  schema or table");
+        }
     }
 
     private static StringBuilder getStringBuilder() {
-        Account account = new Account(3,"11111","2024-05-21","su@gmail.com");
+        Account account = new Account(3, "11111", "2024-05-21", "su@gmail.com");
 
 
         StringBuilder query = new StringBuilder();
